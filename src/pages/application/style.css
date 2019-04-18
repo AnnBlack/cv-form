@@ -1,0 +1,125 @@
+.cv-title {
+  font-family: -apple-system, RoobertTRIAL, "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #161e2e;
+  margin-bottom: 40px;
+}
+.cv-title span {
+  font-family: -apple-system, LucidaGrande-Bold, "Roboto", sans-serif;
+  font-weight: 'normal';
+}
+.cv-form {
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: solid 1px #d9dbde;
+  padding: 9px 14px 9px 14px;
+  opacity: 0.6;
+  font-family: LabGrotesque-Light;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: 0.2px;
+  color: #737882;
+  margin-bottom: 15px;
+  outline: none;
+  transition: all 1s ease;
+}
+input.error {
+  border: solid 1px red;
+}
+.validateField {
+  width: 100%;
+  position: relative;
+}
+
+.errorMessage {
+  position: absolute;
+  top: -21px;
+  right: 11px;
+  font-size: 10px;
+  color: #ec4a4a;
+}
+
+textarea {
+  height: 84px;
+  max-width: 100%;
+  margin-bottom: 35px;
+}
+
+.lastInput {
+  margin-bottom: 36px;
+}
+
+.select {
+  margin-bottom: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: solid 1px #d9dbde;
+  padding: 9px 14px 9px 14px;
+  opacity: 0.6;
+  font-family: LabGrotesque-Light;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: 0.2px;
+  color: #737882;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+input[type="file"].inputfile {
+  border: none;
+  font-size: 16px;
+}
+input[type="file"].inputfile::-webkit-file-upload-button {
+  visibility: hidden;
+}
+input[type="file"].inputfile::before {
+  content: 'Upload CV file';
+  display: inline-block;
+  vertical-align: top;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+}
+input[type="file"].inputfile:hover::before {
+  border-color: black;
+}
+input[type="file"].inputfile:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.success-message {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -130px);
+  color: forestgreen;
+  font-size: 18px;
+  transition: all 3s ease;
+}

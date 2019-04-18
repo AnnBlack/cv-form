@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'LucidaGrande-Bold';
+  font-weight: bold;
+  src: 
+    local('LucidaGrande-Bold'),
+    local('LucidaGrande Bold'),
+    url(./components/layout/fonts/375E5F_1_0.eot) format('eot'),
+    url(./components/layout/fonts/375E5F_1_0.ttf) format('ttf'),
+    url(./components/layout/fonts/375E5F_1_0.woff) format('woff'),
+    url(./components/layout/fonts/375E5F_1_0.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'LabGrotesque-Light';
+  font-weight: light;
+  src: 
+    local('LabGrotesque-Light'),
+    local('LabGrotesque Light'),
+    url(./components/layout/fonts/LabGrotesque-Light.eot) format('eot'),
+    url(./components/layout/fonts/LabGrotesque-Light.woff) format('woff'),
+    url(./components/layout/fonts/LabGrotesque-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'RoobertTRIAL-SemiBold';
+  font-weight: normal;
+  src: 
+    local('RoobertTRIAL-SemiBold'),
+    local('RoobertTRIAL SemiBold'),
+    url(./components/layout/fonts/375E5F_0_0.eot) format('eot'),
+    url(./components/layout/fonts/375E5F_0_0.ttf) format('ttf'),
+    url(./components/layout/fonts/375E5F_0_0.woff) format('woff'),
+    url(./components/layout/fonts/375E5F_0_0.woff2) format('woff2');
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 48px;
+  font-family: -apple-system, LabGrotesque-Light, "Ubuntu", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

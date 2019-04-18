@@ -1,0 +1,19 @@
+.defaultButton {
+  width: 100%;
+  padding: 11px 0 11px 0;
+  border-radius: 4px;
+  border: solid 1px transparent;
+  box-shadow: 0 5px 10px 0 rgba(22, 30, 46, 0.2);
+  background-color: #ffffff;
+  font-family: LabGrotesque-Light;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+}

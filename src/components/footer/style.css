@@ -1,0 +1,15 @@
+.page-footer {
+  flex-shrink: 0;
+}
+.page-footer p {
+  opacity: 0.8;
+  font-family: LabGrotesque-Light;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #161e2e;
+}
