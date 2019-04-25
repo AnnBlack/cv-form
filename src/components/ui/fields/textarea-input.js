@@ -6,12 +6,14 @@ const TextArea = (props) => {
     const fieldValue = event.target.value;
     props.onChange(fieldName, fieldValue);
   }
-  return <textarea
-    name="comments"
-    placeholder={props.placeholder}
-    value={props.value}
-    className={props.className}
-    onChange={onFieldChange}
-  />
+  return ( 
+    <textarea
+      name="comments"
+      placeholder={props.placeholder}
+      value={props.value}
+      className={props.className}
+      onChange={onFieldChange}
+    />
+  )
 }
 export default TextArea;

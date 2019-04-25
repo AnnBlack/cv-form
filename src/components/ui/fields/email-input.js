@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
-export default class EmailInput extends Component {
-  onFieldChange(event) {
+const EmailInput = (props) => {
+  const onFieldChange = (event) => {
     const fieldName = event.target.name;
     const fieldValue = event.target.value;
-    this.props.onChange(fieldName, fieldValue);
+    props.onChange(fieldName, fieldValue);
   }
-  render(){
-    return <input
+  return ( 
+    <input
       type="email"
-      value={this.props.value}
-      placeholder={this.props.placeholder}
-      className={this.props.className}
       name="email"
-      onChange={this.onFieldChange.bind(this)}
+      value={props.value}
+      placeholder={props.placeholder}
+      className={props.className}
+      onChange={onFieldChange}
     />
-  }
+  )
 }
+export default EmailInput

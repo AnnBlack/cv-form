@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
-export default class TextInput extends Component {
-  onFieldChange(event) {
+const TextInput = (props) => {
+  const onFieldChange = (event) => {
     const fieldName = event.target.name;
     const fieldValue = event.target.value;
-    this.props.onChange(fieldName, fieldValue);
+    props.onChange(fieldName, fieldValue);
   }
-  render(){
-    return <input
+  return (
+    <input
       type="text"
-      name={this.props.name}
-      value={this.props.value}
-      placeholder={this.props.placeholder}
-      className={this.props.className}
-      onChange={this.onFieldChange.bind(this)}
+      name={props.name}
+      value={props.value}
+      placeholder={props.placeholder}
+      className={props.className}
+      onChange={onFieldChange}
     />
-  }
+  )
 }
+export default TextInput
