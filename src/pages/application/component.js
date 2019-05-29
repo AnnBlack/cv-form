@@ -35,9 +35,9 @@ const initialState = () => ({
 export default class Application extends Component {
   state = initialState();
 
-  onChange = (field, value) => {
+  onChange = ({target: {name, value}}) => {
     this.setState({
-      [field]: value
+      [name]: value
     });
   }
 
@@ -122,7 +122,7 @@ export default class Application extends Component {
           <SelectInput 
             data={jobsData}
             value={this.state.jobTitle}
-            onChange={this.onChange.bind(this)}
+            onChange={this.onChange}
           />
 
           <div className="validateField">
@@ -130,7 +130,7 @@ export default class Application extends Component {
               placeholder="Name"
               name="name"
               value={this.state.name}
-              onChange={this.onChange.bind(this)}
+              onChange={this.onChange}
               className={this.state.nameError ? 'error' : null}
             />
               { this.state.nameError ? <p className="errorMessage">{this.state.nameError}</p> : null }
@@ -140,14 +140,14 @@ export default class Application extends Component {
             placeholder="LastName"
             name="lastName"
             value={this.state.lastName}
-            onChange={this.onChange.bind(this)}
+            onChange={this.onChange}
           />
 
           <div className="validateField">
             <EmailInput 
               placeholder="Your Email"
               value={this.state.email}
-              onChange={this.onChange.bind(this)}
+              onChange={this.onChange}
               className={this.state.nameError ? 'error' : null}
             />
             { this.state.emailError ? <p className="errorMessage">{this.state.emailError}</p> : null }
@@ -157,7 +157,7 @@ export default class Application extends Component {
             <NumberInput
               placeholder="Your Mobile Number"
               value={this.state.number}
-              onChange={this.onChange.bind(this)}
+              onChange={this.onChange}
               className={this.state.mobileError ? 'error lastInput' : 'lastInput'}
             />
             { this.state.mobileError ? <p className="errorMessage">{this.state.mobileError}</p> : null }
@@ -165,7 +165,7 @@ export default class Application extends Component {
           <TextArea 
             placeholder="Comments"
             value={this.state.comments}
-            onChange={this.onChange.bind(this)}
+            onChange={this.onChange}
           />
 
           <TextInput
@@ -173,7 +173,7 @@ export default class Application extends Component {
             value={this.state.link}
             placeholder="Link to your CV, ex. http://"
             className="input lastInput"
-            onChange={this.onChange.bind(this)}
+            onChange={this.onChange}
           />
 
           <input type="file" name="file" onChange={this.onFileChange} className="inputfile" />
