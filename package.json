@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@koa/cors": "^2.2.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "emailjs": "^2.2.0",
     "koa": "^2.7.0",
     "koa-body": "^4.1.0",
